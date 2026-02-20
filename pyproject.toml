@@ -1,0 +1,54 @@
+[project]
+name = "robot_optimal_trajectory_planning"
+version = "0.0.1"
+authors = [
+  { name = "Max Grobbel", email = "grobbel@fzi.de" }
+]
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "scipy",
+  "pyyaml",
+  "matplotlib",
+  "casadi",
+  "ruamel.yaml",
+  "hydra-core",
+]
+
+[project.optional-dependencies]
+dev = [
+  "black",
+  "ruff",
+  "isort",
+  "nbqa",
+  "pre-commit",
+]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+robot_optimal_trajectory_planning = ["config/*.yaml"]
+
+[tool.black]
+line-length = 119
+target-version = ["py310"]
+
+[tool.isort]
+profile = "black"
+line_length = 119
+src_paths = ["src", "test"]
+
+[tool.ruff]
+# lints: pycodestyle (E), pyflakes (F), naming (N), pyupgrade (UP)
+lint.select = ["E", "F", "UP"]
+
+line-length = 119
+target-version = "py310"
