@@ -1,6 +1,7 @@
-# Robot optimal trajectory planning
+# Robot Optimal Trajectory Planning
 
-
+[![website link](https://img.shields.io/badge/Website-github.io-blue)](https://tristanschneider2000.github.io/optimal-teleoperation)
+<!-- ![doi](https://img.shields.io/badge/DOI--blue) -->
 
 ## Introduction
 
