@@ -3,6 +3,8 @@
 [![website link](https://img.shields.io/badge/Website-github.io-blue)](https://tristanschneider2000.github.io/optimal-teleoperation)
 <!-- ![doi](https://img.shields.io/badge/DOI--blue) -->
 
+![visual abstract](visual_abstract.png)
+
 ## Introduction
 
 This package contains an optimal control based trajectory planner for a robot arm. The planner has been developed as a
